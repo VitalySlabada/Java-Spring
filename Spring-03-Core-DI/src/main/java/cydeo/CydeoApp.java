@@ -1,22 +1,15 @@
-package com.cydeo;
+package cydeo;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class App {
-
+public class CydeoApp {
     public static void main(String[] args) {
-
 
         ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class);
 
+        Java java = container.getBean(Java.class);
 
-       Java java = container.getBean(Java.class);
-
-       java.getTeachingHours();
-
-
+        java.getTeachingHours();
     }
-
-
 }

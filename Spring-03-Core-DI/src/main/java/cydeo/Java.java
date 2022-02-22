@@ -1,33 +1,28 @@
-package com.cydeo;
+package cydeo;
+
 
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-
-
-@AllArgsConstructor
 @Component
+@AllArgsConstructor
 public class Java {
 
-//    //field injection
+    //Field Injection
+
 //    @Autowired
 //    OfficeHours officeHours;
 
 
-
-
+    //Constructor Injection
     OfficeHours officeHours;
-    //COnstructor injection - not needed in only one constructor
+
 //    @Autowired
 //    public Java(OfficeHours officeHours) {
 //        this.officeHours = officeHours;
 //    }
 
     public void getTeachingHours(){
-
-        System.out.println("weekly teaching hours:" + (60 + officeHours.getHours()));
-
+        System.out.println("Weekly teaching hours : " + (20 + officeHours.getHours()));
     }
 }
