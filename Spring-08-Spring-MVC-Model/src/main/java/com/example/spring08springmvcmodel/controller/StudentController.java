@@ -1,7 +1,5 @@
 package com.example.spring08springmvcmodel.controller;
 
-import com.example.spring08springmvcmodel.Mentor;
-import com.example.spring08springmvcmodel.enums.Gender;
 import com.example.spring08springmvcmodel.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("/student")
 public class StudentController {
 
 
@@ -18,8 +17,8 @@ public class StudentController {
     public String homePage(Model model){
 
         //model method
-        model.addAttribute("name", "string");
-        model.addAttribute("course", "course a");
+        model.addAttribute("name", "Welcome to course page");
+        model.addAttribute("course", "Course A");
 
 
         String subject = "Collections";
@@ -40,7 +39,7 @@ public class StudentController {
 
         model.addAttribute("numbers", numbers);
 
-        Student student = new Student(1,"VAsya","pupkin");
+        Student student = new Student(1,"Vasya","Pupkin");
         model.addAttribute("student", student);
 
 

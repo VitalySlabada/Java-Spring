@@ -1,6 +1,6 @@
 package com.example.spring08springmvcmodel.controller;
 
-import com.example.spring08springmvcmodel.Mentor;
+import com.example.spring08springmvcmodel.model.Mentor;
 import com.example.spring08springmvcmodel.enums.Gender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

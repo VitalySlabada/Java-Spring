@@ -1,4 +1,4 @@
-package com.example.spring08springmvcmodel;
+package com.example.spring08springmvcmodel.model;
 
 import com.example.spring08springmvcmodel.enums.Gender;
 import lombok.AllArgsConstructor;
