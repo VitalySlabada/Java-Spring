@@ -1,6 +1,6 @@
 package com.example.xyz_banksimulation.repository;
 
-import com.example.xyz_banksimulation.entity.Account;
+import com.example.xyz_banksimulation.model.Account;
 import com.example.xyz_banksimulation.exception.RecordNotFound;
 import org.springframework.stereotype.Component;
 

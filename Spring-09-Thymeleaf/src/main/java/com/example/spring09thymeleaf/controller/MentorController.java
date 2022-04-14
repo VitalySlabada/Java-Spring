@@ -19,7 +19,6 @@ public class MentorController {
     public String showForm(Model model){
 
 
-
         List<String> batchList = Arrays.asList("JD1","JD2","JD3","JD4");
         model.addAttribute("batchList", batchList);
         //create an empty object to save data to
@@ -27,19 +26,11 @@ public class MentorController {
         return  "mentor/mentor-register";
     }
 
-
-
     @PostMapping("/confirm")
     public String showForm2(@ModelAttribute("mentor") Mentor mentor){
 
+        System.out.println(mentor.toString());
+
          return "redirect:/mentor/register";
     }
-
-
-
-
-
-
-
-
 }

@@ -1,10 +1,9 @@
 package com.example.xyz_banksimulation.service.impl;
 
-import com.example.xyz_banksimulation.entity.Account;
+import com.example.xyz_banksimulation.model.Account;
 import com.example.xyz_banksimulation.enums.AccountType;
 import com.example.xyz_banksimulation.repository.AccountRepository;
 import com.example.xyz_banksimulation.service.AccountService;
-import lombok.Builder;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -30,7 +29,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public List<Account> listAccount() {
+    public List<Account> listAllAccount() {
         return AccountRepository.findAll();
 
     }

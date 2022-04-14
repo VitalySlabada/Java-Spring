@@ -1,7 +1,7 @@
 package com.example.xyz_banksimulation.service.impl;
 
-import com.example.xyz_banksimulation.entity.Account;
-import com.example.xyz_banksimulation.entity.Transaction;
+import com.example.xyz_banksimulation.model.Account;
+import com.example.xyz_banksimulation.model.Transaction;
 import com.example.xyz_banksimulation.enums.AccountType;
 import com.example.xyz_banksimulation.exception.AccountOwnershipException;
 import com.example.xyz_banksimulation.exception.BadRequestException;
@@ -12,9 +12,7 @@ import com.example.xyz_banksimulation.repository.TransactionRepository;
 import com.example.xyz_banksimulation.service.TransactionService;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.support.BeanDefinitionOverrideException;
 import org.springframework.stereotype.Component;
-import org.springframework.validation.annotation.Validated;
 
 import java.math.BigDecimal;
 import java.util.Date;

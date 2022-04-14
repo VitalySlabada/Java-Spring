@@ -1,8 +1,7 @@
 package com.example.xyz_banksimulation;
 
-import com.example.xyz_banksimulation.entity.Account;
+import com.example.xyz_banksimulation.model.Account;
 import com.example.xyz_banksimulation.enums.AccountType;
-import com.example.xyz_banksimulation.exception.BalanceNotSufficientException;
 import com.example.xyz_banksimulation.service.AccountService;
 import com.example.xyz_banksimulation.service.TransactionService;
 import com.example.xyz_banksimulation.service.impl.AccountServiceImpl;

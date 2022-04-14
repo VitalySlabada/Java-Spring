@@ -1,9 +1,7 @@
-package com.example.xyz_banksimulation.entity;
+package com.example.xyz_banksimulation.model;
 
-import com.example.xyz_banksimulation.enums.AccountType;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.Date;
